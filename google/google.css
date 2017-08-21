@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    min-width: 960px;
+    overflow: auto;
+}
+
+.nav {
+    width: 100%;
+    height: 200px;
+}
+
+.nav_r {
+    float: right;
+    width: 200px;
+    height: 30px;
+    padding: 20px;
+    line-height: 30px;
+    font-size: 13px;
+}
+
+.nav_r a {
+    margin-right: 12px;
+    float: left;
+    color: #000;
+}
+
+.gm:hover, .im:hover {
+    text-decoration: underline;
+}
+
+.am {
+    position: relative;
+    margin-right: 12px;
+    float: left;
+}
+
+.am span.ami {
+    color: #000;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-image: url(icons.png);
+    background-position: -132px -38px;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+    cursor: pointer;
+}
+
+.am span.ami:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.apps {
+    display: none;
+    position: absolute;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 2px #bbb;
+    top: 45px;
+    right: -64px;
+    width: 320px;
+    height: 500px;
+    z-index: 5;
+    background-color: #fff;
+}
+
+.as1 {
+    position: absolute;
+    top: -8px;
+    right: 70px;
+    display: block;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    border: 8px solid #ccc;
+    z-index: 6;
+    border-color: #ccc rgba(255, 255, 255, 0);
+    border-width: 0 8px 8px 8px;
+}
+
+.as2 {
+    position: absolute;
+    top: -7px;
+    right: 70px;
+    display: block;
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    border: 8px solid #fff;
+    z-index: 7;
+    border-color: #fff rgba(255, 255, 255, 0);
+    border-width: 0 8px 8px 8px;
+}
+
+.apps_content{
+    width:100%;
+    height:100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.mains {
+    height: 400px;
+    width: 260px;
+    text-align: center;
+    padding: 30px;
+}
+
+.mains div {
+    display: inline-block;
+}
+
+.mains div a {
+    display: inline-block;
+    padding: 0 10px;
+    width: 64px;
+    height: 84px;
+    line-height: 14px;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.mains a:hover {
+    border: 1px solid #ddd;
+    padding: 0 9px;
+    margin: 7px 0;
+    border-radius: 5px;
+}
+
+.mains a span {
+    display: inline-block;
+    content: "";
+    width: 64px;
+    height: 64px;
+    background-image: url("i.png");
+    vertical-align: top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.in1 span {
+    background-position: 0 -970px;
+}
+
+.in2 span {
+    background-position: 0 -74px;
+}
+
+.in3 span {
+    background-position: 0 -1798px;
+}
+
+.in4 span {
+    background-position: 0 -1520px;
+}
+
+.in5 span {
+    background-position: 0 -1864px;
+}
+
+.in6 span {
+    background-position: 0 -414px;
+}
+
+.in7 span {
+    background-position: 0 -764px;
+}
+
+.in8 span {
+    background-position: 0 -1112px;
+}
+
+.in9 span {
+    background-position: 0 -1594px;
+}
+
+.in10 span {
+    background-position: 0 -1380px;
+}
+
+.in11 span {
+    background-position: 0 -692px;
+}
+
+.in12 span {
+    background-position: 0 -624px;
+}
+
+a.morebtn {
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #666;
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.mains_two {
+    display: none;
+    height: 230px;
+    width: 260px;
+    text-align: center;
+    padding: 30px;
+}
+
+.mains_two div {
+    display: inline-block;
+}
+
+div.line {
+    display: block;
+    margin-bottom: 30px;
+    border-width: 0 0 1px;
+    border-style: inset;
+    border-color: #ddd;
+}
+
+.mains_two div a {
+    display: inline-block;
+    padding: 0 10px;
+    width: 64px;
+    height: 84px;
+    line-height: 14px;
+    margin: 8px 0;
+    text-align: center;
+}
+
+.mains_two a:hover {
+    border: 1px solid #ddd;
+    padding: 0 9px;
+    margin: 7px 0;
+    border-radius: 5px;
+}
+
+.mains_two a span {
+    display: inline-block;
+    content: "";
+    width: 64px;
+    height: 64px;
+    background-image: url("i.png");
+    vertical-align: top;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
+.in13 span {
+    background-position: 0 -1040px;
+}
+
+.in14 span {
+    background-position: 0 -1935px;
+}
+
+.in15 span {
+    background-position: 0 -142px;
+}
+
+.in16 span {
+    background-position: 0 -1664px;
+}
+
+.in17 span {
+    background-position: 0 -5px;
+}
+
+.mains_two a.in18 span {
+    background-image: url(idea.png);
+    background-position: 0 -5px;
+}
+
+a.g_more {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+a.g_more:hover {
+    border: none;
+    padding: 0;
+    margin: 0 0 10px;
+    border-radius: 0;
+    text-decoration: underline;
+}
+
+.bm {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 2px;
+    background-color: #4285f4;
+}
+
+.nav_r .bm {
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+}
+
+.gi {
+    position: relative;
+}
+
+.gi a {
+    background-image: url("googlelogo_color.png");
+    position: relative;
+    display: inline-block;
+    width: 272px;
+    height: 92px;
+}
+
+.gi span {
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    color: #4285f4;
+    font-size: 16px;
+}
+
+.tg {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.igc {
+    position: relative;
+}
+
+.iga {
+    position: absolute;
+    top: 10px;
+    right: 22px;
+    width: 14px;
+    height: 20px;
+    background-image: url("microphone.png");
+    background-size: 100% 100%;
+}
+
+.tipg {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: -14px;
+    background-color: #333;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    width: 82px;
+    line-height: 28px;
+    height: 28px;
+}
+
+.tips {
+    display: block;
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
+    border: 6px solid #333;
+    border-color: #333 rgba(255, 255, 255, 0);
+    border-width: 0 6px 6px 6px;
+    position: absolute;
+    top: -6px;
+    right: 35px;
+}
+
+.ing {
+    display: block;
+    width: 540px;
+    height: 30px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 2px #bbb;
+    outline: none;
+    padding: 5px 15px;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.ing:hover, .ing:focus {
+    box-shadow: 0 3px 5px #bbb;
+}
+
+.sgl {
+    margin-right: 5px;
+}
+
+.sgl, .sgr {
+    width: 100px;
+    height: 35px;
+    border: none;
+    color: #777;
+    font-weight: bold;
+    background-color: #eee;
+    border-radius: 2px;
+}
+
+.sgl:hover, .sgr:hover, .sgl:focus, .sgr:focus {
+    border: 1px solid #999;
+    color: #444;
+    box-shadow: 1px 1px 2px #999;
+    outline: none;
+}
+
+.fg {
+    margin-top: 30px;
+    font-size: 13px;
+}
+
+.fg a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    width: 100%;
+    height: 40px;
+    font-size: 13px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #eee;
+    border-top: 1px solid #ddd;
+    padding-left: 20px;
+}
+
+.footer a {
+    margin: 15px;
+    color: #333;
+    text-align: center;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.foo_l {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+
+.foo_r {
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 40px;
+}
+
+ul, li {
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    height: 50px;
+}
+
+.setBox {
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    right: 55px;
+    box-shadow: 0px 0px 4px #ccc;
+    width: 90px;
+    height: 250px;
+    padding: 10px 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}

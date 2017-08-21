@@ -1,0 +1,278 @@
+/* reset */
+body {
+    overflow: auto;
+    min-width: 960px;
+    font-size: 15px;
+    background-color: #eee;
+}
+
+html, body, div, ul, li, a, span, input {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+/* reset END */
+/* 顶部导航条 */
+.header {
+    height: 250px;
+}
+
+.nav_top {
+    height: 40px;
+    border-bottom: 2px solid #d41;
+    background-color: #000;
+}
+
+.top_left, .bottom_left, .footer_top li, .footer_center li {
+    float: left;
+}
+
+.top_right, .bottom_right {
+    float: right;
+    text-align: center;
+}
+
+.top_left li, .top_right li, .bottom_left li, .bottom_right li {
+    float: left;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.top_left a:hover, .top_right a:hover {
+    color: #d41;
+}
+
+.top_right .submission a:hover {
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #e41;
+}
+
+.top_left a.active {
+    color: #d41;
+}
+
+.top_left > li {
+    margin-right: 40px;
+}
+
+.bottom_left > li {
+    position: relative;
+    padding: 0 10px;
+    margin-right: 12px;
+}
+
+.nav_top a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+}
+
+.logo {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    background-image: url('icon2.svg');
+    background-position: -22px -164px;
+    vertical-align: text-bottom;
+}
+
+.live {
+    position: relative;
+    top: -5px;
+    color: #d41;
+}
+
+.top_right .submission {
+    width: 70px;
+    margin-left: 20px;
+    background-color: #d41;
+}
+
+.nav_content {
+    height: 166px;
+}
+
+.nav_content .center_content {
+    position: relative;
+    height: 100%;
+}
+
+.search_box {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 200px;
+    height: 30px;
+    outline: none;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: #fafafa;
+}
+
+.search_btn {
+    position: absolute;
+    right: 28px;
+    bottom: 24px;
+    content: '';
+    width: 22px;
+    height: 22px;
+    background-image: url("icon2.svg");
+    background-position: -132px -104px;
+    cursor: pointer;
+}
+
+.search_btn:hover {
+    background-position: -108px -92px;
+}
+
+.nav_bottom {
+    height: 40px;
+    background-color: #fff;
+}
+
+.nav_bottom a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #333;
+}
+
+.bottom_left ul {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    width: 140px;
+    background-color: #fff;
+}
+
+.bottom_left ul li {
+    width: 140px;
+    transition: text-indent .2s;
+}
+
+.bottom_left ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.bottom_left ul li:hover {
+    background-color: #e5e5e5;
+    text-indent: 10px;
+}
+
+.bottom_left ul a:hover {
+    color: #d41;
+}
+
+.bottom_left ul a:hover:before {
+    background-color: #d41;
+}
+
+.bottom_left ul a:before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    vertical-align: middle;
+    margin: 0 5px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.bottom_right a {
+    width: 100%;
+    height: 100%;
+}
+
+.bottom_right a:before {
+    content: "";
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background-image: url(icon2.svg);
+    background-position: -168px 4px;
+    vertical-align: text-bottom;
+}
+
+.bottom_right a:hover:before {
+    background-position: -124px -124px;
+}
+
+.bottom_left a:hover, .bottom_right a:hover {
+    color: #d41;
+}
+
+.bottom_left a.active {
+    color: #000;
+}
+
+.center_content {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* 顶部导航条END */
+
+/* 内容部分 */
+
+/* 内容部分END */
+
+/* 底部导航 */
+
+.footer {
+    text-align: center;
+    color: #999;
+}
+
+.footer_top {
+    display: inline-block;
+}
+
+.footer_top a {
+    padding: 0 15px;
+    color: #444;
+}
+
+.footer_top a:hover {
+    color: #212121;
+}
+
+.footer_top li + li {
+    border-left: 1px solid #aaa;
+}
+
+.footer_center {
+    display: inline-block;
+    clear: both;
+}
+
+.footer_center li, .footer_center a {
+    color: #999;
+}
+
+.footer_center a:hover {
+    color: #555;
+}
+
+.footer_center li {
+    margin: 0 15px;
+}
+
+/* 底部导航条END */
